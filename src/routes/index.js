@@ -14,7 +14,7 @@ router.post("/new-message", async (req, res) => {
   const { message } = req.body;
 
   const payload = JSON.stringify({
-    title: "Proensi te comunica que tienes nuevo proyecto!",
+    title: "Tenemos nuevo proyecto!",
     message: message,
   });
   try {

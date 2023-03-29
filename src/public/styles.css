@@ -1,0 +1,53 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+.mb {
+  margin-bottom: 1rem;
+}
+.mt {
+  margin-top: 2.5rem;
+}
+.container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  height: 100vh;
+}
+.sub-container {
+  width: 70%;
+
+  background-color: #fbfafb;
+  padding: 2rem;
+}
+#myForm {
+  padding: 2rem;
+  border: 0.5px solid grey;
+  border-radius: 6px;
+  /* display: flex;
+  justify-content: center; */
+}
+.title {
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    padding: 1rem;
+  }
+  .sub-container {
+    padding: 1rem;
+    width: 100%;
+  }
+  #myForm {
+    padding: 1rem;
+  }
+  .input {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .mt {
+    margin-top: 1rem;
+  }
+}

@@ -4,28 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Notificar nuevo proyecto</title>
   </head>
   <body>
-    <h1>Project Notifier Web push notifications</h1>
-    <form id="myForm">
-      <!-- <input
-        type="text"
-        id="numero"
-        placeholder="Numero de proyecto"
-        autofocus
-      />
-      <input type="text" id="cliente" placeholder="Cliente" autofocus />
-      
-      <input
-        type="text"
-        id="descripcion"
-        placeholder="Descripción del proyecto"
-        autofocus />-->
+    <div class="container">
+      <div class="sub-container">
+        <h1 class="title">Notificador de proyectos - PROENSI</h1>
+        <form id="myForm">
+          <input
+            type="text"
+            id="numero"
+            placeholder="Numero de proyecto"
+            autofocus
+            class="input"
+          />
 
-      <input type="text" id="message" placeholder="Mensaje" autofocus />
-      <button>Send</button>
-    </form>
+          <input
+            type="text"
+            id="cliente"
+            placeholder="Cliente"
+            autofocus
+            class="input"
+          />
+
+          <input
+            type="text"
+            id="message"
+            placeholder="Alcance del proyecto"
+            autofocus
+            class="input"
+          />
+          <div class="mt">
+            <label for="">Fecha inicio</label>
+            <input
+              type="date"
+              name=""
+              id="inicio"
+              placeholder="Fecha inicio"
+              class="input mb"
+            />
+          </div>
+          <div>
+            <label for="">Fecha final </label>
+            <input
+              type="date"
+              name=""
+              id="fin"
+              placeholder="Fecha final"
+              class="input mb"
+            />
+          </div>
+
+          <button>Send</button>
+        </form>
+      </div>
+    </div>
+
     <script src="./main.js"></script>
   </body>
 </html>

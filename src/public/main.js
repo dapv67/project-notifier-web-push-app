@@ -1,7 +1,7 @@
 // const { json } = require("express/lib/response");
 
 const PUBLIC_VAPID_KEY =
-  "BHUyKdxNJC8Ax8rWCMZsN-sEPlrdrjaGqXKZYb_w-NaXhWeAz8NJQFmsKz01ujYeA_THHSZ25eJrkXvjM8IhPHA";
+  "BCIa5UTDh_eDsaIDdxIB5EOFw6eF0pFimxVE-0dBgUs8_73If2YYeywOHLQsGPFupa50R5OLLBytqcbLAO6tIQk";
 
 function urlBase64ToUint8Array(base64String) {
   const padding = "=".repeat((4 - (base64String.length % 4)) % 4);
@@ -39,9 +39,10 @@ const subscription = async () => {
 };
 
 const form = document.querySelector("#myForm");
-// const numero = document.querySelector("#numero");
-// const cliente = document.querySelector("#cliente");
-// const descripcion = document.querySelector("#descripcion");
+const numero = document.querySelector("#numero");
+const cliente = document.querySelector("#cliente");
+const fechaI = document.querySelector("#inicio");
+const fechaF = document.querySelector("#fin");
 const message = document.querySelector("#message");
 
 form.addEventListener("submit", (e) => {
@@ -52,7 +53,20 @@ form.addEventListener("submit", (e) => {
       // numero: numero.value,
       // cliente: cliente.value,
       // descripcion: descripcion.value,
-      message: message.value,
+      message:
+        "Número de proyecto: #" +
+        numero.value +
+        "\n" +
+        "Cliente: " +
+        cliente.value +
+        "\n" +
+        "Alcance gral: " +
+        message.value +
+        "\n" +
+        "Inicio: " +
+        fechaI.value +
+        " Fin: " +
+        fechaF.value,
     }),
     headers: {
       "Content-Type": "application/json",
